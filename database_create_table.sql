@@ -1,0 +1,23 @@
+CREATE TABLE "files" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"name"	TEXT NOT NULL,
+	"ext"	TEXT NOT NULL,
+	"filename"	TEXT NOT NULL,
+	"dirpath"	TEXT NOT NULL,
+	"filepath"	TEXT NOT NULL,
+	"md5"	TEXT NOT NULL UNIQUE,
+	"sha1"	TEXT NOT NULL UNIQUE,
+	"mode"	INTEGER NOT NULL,
+	"uid"	INTEGER NOT NULL,
+	"gid"	INTEGER NOT NULL,
+	"size"	INTEGER NOT NULL,
+	"astime"	TEXT,
+	"mstime"	TEXT,
+	"cstime"	TEXT,
+	"uptime"	TEXT NOT NULL,
+	"atime"	REAL NOT NULL,
+	"mtime"	REAL NOT NULL,
+	"ctime"	REAL NOT NULL,
+	"remark"	TEXT,
+	PRIMARY KEY("id")
+)
